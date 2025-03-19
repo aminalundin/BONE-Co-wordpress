@@ -1,32 +1,32 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package BONE_&_Co.
- */
-
-?>
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<h1>Hej!</h1>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bone-co' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly heheheh %s', 'bone-co' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bone-co' ), 'bone-co', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <!-- Lägg till en logotyp -->
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.bone.png" alt="Logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Terms And Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            <!-- Lägg till ikoner för sociala medier -->
+            <a href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </div>
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
