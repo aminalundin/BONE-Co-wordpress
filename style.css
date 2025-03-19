@@ -698,6 +698,11 @@ textarea {
 	text-decoration: none;
 	padding: 2rem;
 	color: white;
+	font-family: "Poppins", sans-serif;
+	letter-spacing: 4px; 
+	font-size: 12pt;
+	font-weight: 500;
+
 }
 
 /* Small menu. */
