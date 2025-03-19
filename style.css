@@ -648,7 +648,8 @@ textarea {
 /* Navigation
 --------------------------------------------- */
 .main-navigation {
-	display: block;
+	display: flex;
+	justify-content: right;
 	width: 100%;
 }
 
@@ -695,6 +696,8 @@ textarea {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	padding: 2rem;
+	color: white;
 }
 
 /* Small menu. */
@@ -969,9 +972,21 @@ textarea {
 }
 
 body {
-	background-color: white;
+	background-color: grey;
 }
 
+.site-header {
+	background-color: transparent;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid black;
+}
+
+.site-header img {
+	width: 150px;
+	margin-left: 1.5rem;
+}
 
 
 /* ---- FOOTER ----- */
