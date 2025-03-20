@@ -705,6 +705,13 @@ textarea {
 	font-weight: 500;
 }
 
+.main-navigation a:hover {
+	letter-spacing: 6px; 
+    transition: letter-spacing 0.3s ease-in-out;
+	color: white;
+	font-weight: 700;
+}
+
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
