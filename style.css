@@ -543,7 +543,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: #191970;
+	color: grey;
 }
 
 a:focus {
@@ -650,7 +650,8 @@ textarea {
 .main-navigation {
 	display: flex;
 	justify-content: right;
-	width: 100%;
+	align-items: center;
+	width: 100vw;
 }
 
 .main-navigation ul {
@@ -702,7 +703,6 @@ textarea {
 	letter-spacing: 4px; 
 	font-size: 12pt;
 	font-weight: 500;
-
 }
 
 /* Small menu. */
@@ -983,9 +983,10 @@ body {
 .site-header {
 	background-color: transparent;
 	display: flex;
+	position: absolute;
 	justify-content: space-between;
 	align-items: center;
-	border: 1px solid black;
+	z-index: 10000;
 }
 
 .site-header img {
