@@ -6,17 +6,18 @@
     </a>
 </div>
         
-		<nav id="site-navigation" class="footer-links">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bone-co' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-footer',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
+<nav id="footer-navigation" class="footer-links">
+    <?php
+    wp_nav_menu(
+        array(
+            'theme_location' => 'menu-footer',
+            'menu_id'        => 'footer-menu',
+            'container'      => 'div',
+            'container_class'=> 'footer-menu-container',
+        )
+    );
+    ?>
+</nav>
         
         <!-- <div class="footer-links">
             <ul>
