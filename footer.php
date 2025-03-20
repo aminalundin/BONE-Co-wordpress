@@ -10,15 +10,15 @@
     <?php
     wp_nav_menu(
         array(
-            'theme_location' => 'menu-footer',
-            'menu_id'        => 'footer-menu',
+            'theme_location' => 'footer-menu', // OBS! Se till att detta matchar 'functions.php'
+            'menu_id'        => '2',
             'container'      => 'div',
             'container_class'=> 'footer-menu-container',
         )
     );
     ?>
 </nav>
-        
+
         <!-- <div class="footer-links">
             <ul>
                 <li><a href="#">Products</a></li>
