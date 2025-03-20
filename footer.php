@@ -2,7 +2,7 @@
     <div class="footer-container">
         <div class="footer-logo">
             <!-- Lägg till en logotyp -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.bone.png" alt="Logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.footer.png" alt="Logo">
         </div>
         <div class="footer-links">
             <ul>
