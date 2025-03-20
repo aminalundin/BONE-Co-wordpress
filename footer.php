@@ -1,10 +1,24 @@
 <footer id="colophon" class="site-footer">
     <div class="footer-container">
-        <div class="footer-logo">
-            <!-- Lägg till en logotyp -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.footer.png" alt="Logo">
-        </div>
-        <div class="footer-links">
+    <div class="footer-logo">
+    <a href="<?php echo home_url(); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/logo.footer.png" alt="Logo">
+    </a>
+</div>
+        
+		<nav id="site-navigation" class="footer-links">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'bone-co' ); ?></button>
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-footer',
+					'menu_id'        => 'primary-menu',
+				)
+			);
+			?>
+		</nav><!-- #site-navigation -->
+        
+        <!-- <div class="footer-links">
             <ul>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">About</a></li>
@@ -12,7 +26,9 @@
 				<li><a href="#">Terms And Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>
-        </div>
+        </div> -->
+
+
         <div class="footer-socials">
             <!-- Lägg till ikoner för sociala medier -->
             <a href="https://facebook.com" target="_blank">
