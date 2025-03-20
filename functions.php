@@ -182,3 +182,13 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+function register_custom_menus() {
+    register_nav_menus(
+        array(
+            'primary'      => __('Primary Menu'),
+            'footer_menu'  => __('Footer Menu')
+        )
+    );
+}
+add_action('after_setup_theme', 'register_custom_menus');
