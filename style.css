@@ -66,7 +66,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
- html {
+html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 }
@@ -495,8 +495,8 @@ ol {
 	list-style: decimal;
 }
 
-li > ul,
-li > ol {
+li>ul,
+li>ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
@@ -675,8 +675,8 @@ textarea {
 	top: 0;
 }
 
-.main-navigation ul ul li:hover > ul,
-.main-navigation ul ul li.focus > ul {
+.main-navigation ul ul li:hover>ul,
+.main-navigation ul ul li.focus>ul {
 	display: block;
 	left: auto;
 }
@@ -685,8 +685,8 @@ textarea {
 	width: 200px;
 }
 
-.main-navigation ul li:hover > ul,
-.main-navigation ul li.focus > ul {
+.main-navigation ul li:hover>ul,
+.main-navigation ul li.focus>ul {
 	left: auto;
 }
 
@@ -700,14 +700,14 @@ textarea {
 	padding: 2rem;
 	color: white;
 	font-family: "Poppins", sans-serif;
-	letter-spacing: 4px; 
+	letter-spacing: 4px;
 	font-size: 12pt;
 	font-weight: 500;
 }
 
 .main-navigation a:hover {
-	letter-spacing: 6px; 
-    transition: letter-spacing 0.3s ease-in-out;
+	letter-spacing: 6px;
+	transition: letter-spacing 0.3s ease-in-out;
 	color: white;
 	font-weight: 700;
 }
@@ -730,10 +730,8 @@ textarea {
 }
 
 .site-main .comment-navigation,
-.site-main
-.posts-navigation,
-.site-main
-.post-navigation {
+.site-main .posts-navigation,
+.site-main .post-navigation {
 	margin: 0 0 1.5em;
 }
 
@@ -987,14 +985,6 @@ body {
 	background-color: grey;
 }
 
-.site-header {
-	background-color: transparent;
-	display: flex;
-	position: absolute;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 10000;
-}
 
 .site-header img {
 	width: 150px;
@@ -1008,62 +998,64 @@ body {
 /* ------ */
 
 #colophon {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #FFFFFFBF;
-    color: black;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px; 
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #FFFFFFBF;
+	color: black;
+	padding: 20px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
 }
 
 .home #colophon {
-    background-color: transparent !important;
+	background-color: transparent !important;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
-    width: 100%;
-    padding: 0 25px;
+	width: 100%;
+	padding: 0 25px;
 }
 
 .footer-logo img {
-    width: 50px;
-    margin: 0 auto;
+	width: 50px;
+	margin: 0 auto;
 }
 
 .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; 
-    justify-content: flex-start;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 12px;
-    width: 100%;
-    letter-spacing: 4px; 
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 12px;
+	width: 100%;
+	letter-spacing: 4px;
 }
 
 .footer-links li {
-    margin: 0 20px; /* Minska marginaler mellan länkar */
+	margin: 0 20px;
+	/* Minska marginaler mellan länkar */
 }
 
 .footer-links a {
-    color: black;
-    text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
 
 .footer-links a:hover {
-    letter-spacing: 6px; /* Ökar spacing vid hover */
-    transition: letter-spacing 0.3s ease-in-out;
+	letter-spacing: 6px;
+	/* Ökar spacing vid hover */
+	transition: letter-spacing 0.3s ease-in-out;
 	color: black;
 	font-weight: 700;
 }
@@ -1071,33 +1063,158 @@ body {
 
 
 .footer-socials a {
-    color: #000000;
-    margin: 0 10px; 
-    text-decoration: none;
+	color: #000000;
+	margin: 0 10px;
+	text-decoration: none;
 	font-size: 20px;
 }
 
+
+.header-container {
+	background-color: transparent;
+	display: flex;
+	position: absolute;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+    color: white;
+	width: 100vw;
+	letter-spacing: 4px;
+}
+
+
+.burger-menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    display: none; 
+}
+
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    text-align: center;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+
+.mobile-menu.active {
+    display: flex;
+}
+
+
+.mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.desktop-menu {
+    display: flex;
+}
+
+
+
 /* Responsiv design */
 @media (max-width: 768px) {
-    #colophon {
-        flex-direction: column;
-        text-align: center;
-    }
+	
+	.burger-menu {
+		display: block;
+	}
+	.desktop-menu {
+		display: none; 
+	}
 
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
+	@keyframes slideIn {
+		from {
+			transform: translateY(-100%);
+			opacity: 0;
+		}
+	
+		to {
+			transform: translateY(0);
+			opacity: 1;
+		}
+	}
 
-    .footer-links ul {
-        flex-direction: column;
-    }
+	.header-container {
+		top: 10px;
+	}
 
-    .footer-links li {
-        margin: 5px 0;
-    }
+	.mobile-menu {
+		padding: 0;
+		margin: 0;
+		border: 1px solid red;
+		height: 60vh;
+		transform: translateY(-100%);
+        animation: slideIn 0.8s ease-out forwards;
+	}
 
-    .footer-socials a {
-        margin: 5px;
-    }
+	.mobile-menu-container {
+		border: 1px solid green;
+		height: 100%;
+	}
+
+	.mobile-menu ul {
+		height: 100%;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		border: 1px solid green;
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+		justify-content: left;
+	}
+
+	.mobile-menu li {
+		text-align: left;
+		list-style: none;
+		padding-left: 2rem;
+		padding-top: 5rem;
+		border: 1px solid yellow;
+	}
+
+	.mobile-menu a {
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+		letter-spacing: 4px;
+		text-decoration: none;
+		color: white;
+	}
+
+
+	#colophon {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.footer-container {
+		display: flex;
+		gap: 1rem;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem;
+	}
+
+	.footer-links ul {
+		flex-direction: column;
+	}
+
+	.footer-links li {
+		margin: 10px 0;
+	}
+
+	.footer-socials a {
+		margin: 5px;
+	}
 }
