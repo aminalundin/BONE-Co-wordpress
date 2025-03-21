@@ -1,3 +1,4 @@
+<div>
 <footer id="colophon" class="site-footer">
     <div class="footer-container">
     <div class="footer-logo">
@@ -18,7 +19,7 @@
     );
     ?>
 </nav>
-
+</div>
         <!-- <div class="footer-links">
             <ul>
                 <li><a href="#">Products</a></li>
@@ -30,9 +31,9 @@
         </div> -->
 
 
-        <div class="footer-socials">
-            <!-- Lägg till ikoner för sociala medier -->
-            <a href="https://facebook.com" target="_blank">
+        <!-- <div class="footer-socials">
+            Lägg till ikoner för sociala medier -->
+            <!-- <a href="https://facebook.com" target="_blank">
                 <i class="fab fa-facebook"></i>
             </a>
             <a href="https://instagram.com" target="_blank">
@@ -41,7 +42,9 @@
             <a href="https://tiktok.com" target="_blank">
                 <i class="fab fa-tiktok"></i>
             </a>
-        </div>
+        </div> -->
+
+        
     </div>
 </footer><!-- #colophon -->
 </div><!-- #page -->

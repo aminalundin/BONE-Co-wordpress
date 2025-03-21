@@ -1013,7 +1013,7 @@ body {
     left: 0;
     width: 100%;
     /* background-color: #ffffff; */
-    color: white;
+    color: black;
     padding: 25px 0;
     display: flex;
     justify-content: space-between;
@@ -1039,7 +1039,7 @@ body {
     padding: 0;
     margin: 0;
     display: flex; 
-    justify-content: center;
+    justify-content: flex-start;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -1053,7 +1053,7 @@ body {
 }
 
 .footer-links a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
