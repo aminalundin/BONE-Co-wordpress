@@ -1196,6 +1196,7 @@ body {
 	#colophon {
 		flex-direction: column;
 		text-align: center;
+		position: static;
 	}
 
 	.footer-container {
