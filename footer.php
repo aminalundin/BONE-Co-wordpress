@@ -11,9 +11,8 @@
     <?php
     wp_nav_menu(
         array(
-            'theme_location' => 'footer-menu', // OBS! Se till att detta matchar 'functions.php'
-            'menu_id'        => '2',
-            'container'      => 'div',
+            'theme_location' => 'footer_menu', 
+            'container' => 'div',
             'container_class'=> 'footer-menu-container',
         )
     );
