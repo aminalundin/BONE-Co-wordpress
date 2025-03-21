@@ -25,19 +25,21 @@
 
 		<header id="masthead" class="site-header">
 			<div class="header-container">
-				
+
 				<div class="site-branding">
+					<div class="logo">
 					<a href="<?php echo esc_url(home_url('/')); ?>">
 						<?php the_custom_logo(); ?>
 					</a>
+					</div>
+					<button id="drop-down-menu" class="burger-menu">
+						<i class="fas fa-bars"></i>
+					</button>
 				</div>
 
-				
-				<button id="drop-down-menu" class="burger-menu">
-					<i class="fas fa-bars"></i> 
-				</button>
 
-				
+
+
 				<nav id="mobile-menu" class="mobile-menu">
 					<?php
 					wp_nav_menu(
@@ -69,10 +71,10 @@
 				const mobileMenu = document.getElementById("drop-down-menu");
 				const mobileMenuClicked = document.getElementById("mobile-menu");
 
-					mobileMenu.addEventListener("click", function () {
-						mobileMenuClicked.classList.toggle("active");
-					});
-			
+				mobileMenu.addEventListener("click", function () {
+					mobileMenuClicked.classList.toggle("active");
+				});
+
 			</script>
 
 		</header>
