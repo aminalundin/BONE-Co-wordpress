@@ -32,7 +32,7 @@
 							<?php the_custom_logo(); ?>
 						</a>
 					</div>
-					<div class="hej">
+					<div class="header-icons">
 					<?php if (is_active_sidebar('header-widget')): ?>
 						<div class="header-widget-area">
 							<?php dynamic_sidebar('header-widget'); ?>

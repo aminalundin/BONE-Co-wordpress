@@ -1074,6 +1074,17 @@ body {
 	font-size: 20px;
 }
 
+.home .footer-logo {
+	display: none;
+}
+
+.home .footer-container {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	width: 100%;
+	padding: 0 25px;
+}
 
 /* HEADER --------------------------------------------------------- */
 
@@ -1195,6 +1206,11 @@ body {
 	.logo {
 		margin: 0;
 		padding: 0;
+	}
+
+	.header-icons {
+		display: flex;
+		align-items: center;
 	}
 	
 	.mobile-menu {
