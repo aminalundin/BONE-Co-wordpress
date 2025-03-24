@@ -28,17 +28,23 @@
 
 				<div class="site-branding">
 					<div class="logo">
-					<a href="<?php echo esc_url(home_url('/')); ?>">
-						<?php the_custom_logo(); ?>
-					</a>
+						<a href="<?php echo esc_url(home_url('/')); ?>">
+							<?php the_custom_logo(); ?>
+						</a>
 					</div>
+					<div class="hej">
+					<?php if (is_active_sidebar('header-widget')): ?>
+						<div class="header-widget-area">
+							<?php dynamic_sidebar('header-widget'); ?>
+						</div>
+					<?php endif; ?>
+
 					<button id="drop-down-menu" class="burger-menu">
 						<i class="fas fa-bars"></i>
 					</button>
+					</div>
 				</div>
-
-
-
+				
 
 				<nav id="mobile-menu" class="mobile-menu">
 					<?php
@@ -54,7 +60,6 @@
 					?>
 				</nav>
 
-				<!-- Desktop Navigation -->
 				<nav id="site-navigation" class="main-navigation desktop-menu">
 					<?php
 					wp_nav_menu(
