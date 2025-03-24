@@ -1247,7 +1247,7 @@ body {
 	}
 
 	.home #colophon {
-		position: absolute;
+		position: relative;
 	}
 
 	.footer-container {
