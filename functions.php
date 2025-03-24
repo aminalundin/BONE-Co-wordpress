@@ -148,6 +148,16 @@ function custom_header_widget()
 }
 add_action('widgets_init', 'custom_header_widget');
 
+add_filter('woocommerce_add_to_cart_fragments', 'update_cart_icon_count');
+function update_cart_icon_count($fragments) {
+    ob_start();
+    ?>
+    <span class="cart-count"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+    <?php
+    $fragments['.cart-count'] = ob_get_clean();
+    return $fragments;
+}
+
 /**
  * Enqueue scripts and styles.
  */
