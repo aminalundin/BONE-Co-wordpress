@@ -1004,7 +1004,7 @@ body {
 /* ------ */
 
 #colophon {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	left: 0;
 	width: 100%;
@@ -1019,6 +1019,7 @@ body {
 
 .home #colophon {
 	background-color: transparent !important;
+	position: absolute;
 }
 
 .footer-container {
@@ -1030,7 +1031,7 @@ body {
 }
 
 .footer-logo img {
-	width: 50px;
+	width: 150px;
 	margin: 0 auto;
 }
 
@@ -1238,7 +1239,6 @@ body {
 		flex-direction: column;
 		text-align: center;
 		position: relative;
-		background-color: black;
 		color: white;
 	}
 
