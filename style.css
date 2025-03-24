@@ -1243,8 +1243,11 @@ body {
 	#colophon {
 		flex-direction: column;
 		text-align: center;
-		position: relative;
 		color: white;
+	}
+
+	.home #colophon {
+		position: absolute;
 	}
 
 	.footer-container {
