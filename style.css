@@ -1091,6 +1091,22 @@ body {
 /* other colors */
 .page-cart .site-header {
 	background-color: black !important;
+	color: white;
+}
+
+.privacy-policy .site-header {
+	background-color: black !important;
+	color: white;
+}
+
+.page-refund_returns .site-header {
+	background-color: black !important;
+	color: white;
+}
+
+.single-product .site-header {
+	background-color: black !important;
+	color: white;
 }
 
 .header-container {
@@ -1176,6 +1192,27 @@ img.custom-logo {
 	}
 
 	/* HEADER ----------------------------------------------------------------- */
+
+	/* other colors */
+.page-cart .site-header {
+	background-color: black !important;
+	color: white;
+}
+
+.privacy-policy .site-header {
+	background-color: black !important;
+	color: white;
+}
+
+.page-refund_returns .site-header {
+	background-color: black !important;
+	color: white;
+}
+
+.single-product .site-header {
+	background-color: black !important;
+	color: white;
+}
 
 	.burger-menu {
 		display: block;
