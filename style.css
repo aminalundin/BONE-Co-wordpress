@@ -1293,6 +1293,10 @@ img.custom-logo {
 		position: relative;
 	}
 
+	.home .footer-logo {
+		display: block;
+	}
+
 	.footer-container {
 		display: flex;
 		gap: 1rem;
