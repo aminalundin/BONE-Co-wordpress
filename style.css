@@ -1088,6 +1088,10 @@ body {
 
 /* HEADER --------------------------------------------------------- */
 
+/* other colors */
+.page-cart .site-header {
+	background-color: black !important;
+}
 
 .header-container {
 	background-color: transparent;
