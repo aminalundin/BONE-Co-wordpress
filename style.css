@@ -993,6 +993,11 @@ body {
 	padding: 0;
 }
 
+html{
+	margin: 0;
+	padding: 0;
+}
+
 
 .site-header img {
 	width: 150px;
@@ -1096,13 +1101,13 @@ body {
 .page-template-default .site-header {
 	background-color: black !important;
 	color: white;
-	height: 100px;
+	height: 80px;
 }
 
 .product-template-default .site-header {
 	background-color: black !important;
 	color: white;
-	height: 100px;
+	height: 80px;
 }
 
 
@@ -1196,13 +1201,13 @@ img.custom-logo {
 	.page-template-default .site-header {
 		background-color: black !important;
 		color: white;
-		height: 60px;
+		height: 50px;
 	}
 
 	.product-template-default .site-header {
 		background-color: black !important;
 		color: white;
-		height: 60px;
+		height: 50px;
 	}
 	
 
