@@ -1089,25 +1089,15 @@ body {
 /* HEADER --------------------------------------------------------- */
 
 /* other colors */
-.page-cart .site-header {
+
+.page-template-default .product-template-default .site-header {
 	background-color: black !important;
 	color: white;
+	height: 100px;
 }
 
-.privacy-policy .site-header {
-	background-color: black !important;
-	color: white;
-}
 
-.page-refund_returns .site-header {
-	background-color: black !important;
-	color: white;
-}
 
-.single-product .site-header {
-	background-color: black !important;
-	color: white;
-}
 
 .header-container {
 	background-color: transparent;
@@ -1194,25 +1184,13 @@ img.custom-logo {
 	/* HEADER ----------------------------------------------------------------- */
 
 	/* other colors */
-.page-cart .site-header {
-	background-color: black !important;
-	color: white;
-}
 
-.privacy-policy .site-header {
-	background-color: black !important;
-	color: white;
-}
-
-.page-refund_returns .site-header {
-	background-color: black !important;
-	color: white;
-}
-
-.single-product .site-header {
-	background-color: black !important;
-	color: white;
-}
+	.page-template-default .product-template-default .site-header {
+		background-color: black !important;
+		color: white;
+		height: 60px;
+	}
+	
 
 	.burger-menu {
 		display: block;
@@ -1357,4 +1335,9 @@ img.custom-logo {
 	.footer-socials a {
 		margin: 5px;
 	}
+}
+
+html {
+    margin: 0;
+    padding: 0;
 }
